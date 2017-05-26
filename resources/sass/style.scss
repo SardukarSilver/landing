@@ -10,12 +10,16 @@ $font-family-base: 'Raleway', sans-serif;
 body {
   padding-top: 50px;
 }
-.starter-template {
-  padding: 40px 15px;
-  text-align: center;
-  background-color: blanchedalmond;
+.lnd-navbar {
+    .navbar-header {
+        float: none;
+        text-align: center;
+    }
+    li {
+     display: inline-block;
+     float: none;
+    }
 }
-
 .lnd-intro {
   background: #f6f2f2;    
 }
