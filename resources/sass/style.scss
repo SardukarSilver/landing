@@ -6,10 +6,8 @@ $font-family-base: 'Raleway', sans-serif;
 @import "bootstrap";
 @import "font-awesome";
 
-// Bootstrap Starter Template Styles
-body {
-  padding-top: 50px;
-}
+@import "tabs-decoration";
+
 .lnd-navbar {
     .navbar-header {
         float: none;
@@ -24,16 +22,23 @@ body {
   background: #f6f2f2;    
 }
 .lnd-services {
-  background: #fff;    
+  background: #fff;
+  .separator {
+    border-bottom: 1px solid #ececec;    
+  }
 }
 .lnd-products {
   background: #fff;    
 }
+
 .lnd-team {
   background: #fff;    
 }
 .lnd-subscribe {
-  background: #f5f0dd;    
+  background: #f5f0dd;
+  background-image: url(../images/subscribe_bg.jpg);
+  background-size: cover; 
+  background-position: center center; 
 }
 
 .home-newsletter {
