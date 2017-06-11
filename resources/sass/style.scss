@@ -25,13 +25,13 @@ $font-family-base: 'Open Sans', sans-serif;
 }
 
 .lnd-intro {
-  background: #f6f2f2;    
+  background: #f6f2f2;
   padding-top: 50px;
 }
 .lnd-services {
   background: #fff;
   .separator {
-    border-bottom: 1px solid #ececec;    
+    border-bottom: 1px solid #ececec;
   }
 }
 .lnd-products {
@@ -52,7 +52,7 @@ $font-family-base: 'Open Sans', sans-serif;
     display: -webkit-flex;
     display: flex;
   }
-  .wrap { 
+  .wrap {
    -webkit-flex-wrap: wrap;
    flex-wrap: wrap;
   }
@@ -65,14 +65,14 @@ $font-family-base: 'Open Sans', sans-serif;
 }
 
 .lnd-team {
-  background: #fff;    
+  background: #fff;
 }
 
 .lnd-subscribe {
   background: #f5f0dd;
   background-image: url(../images/subscribe_bg.jpg);
-  background-size: cover; 
-  background-position: center center; 
+  background-size: cover;
+  background-position: center center;
 }
 
 .home-newsletter {
@@ -82,11 +82,11 @@ $font-family-base: 'Open Sans', sans-serif;
     margin: 0 auto;
     text-align: center;
     position: relative;
-    z-index: 2; 
+    z-index: 2;
       h2 {
         font-size: 22px;
         color: white;
-        margin-bottom: 40px; 
+        margin-bottom: 40px;
       }
       .form-control {
         height: 50px;
@@ -98,7 +98,7 @@ $font-family-base: 'Open Sans', sans-serif;
         border-color: #243c4f;
       }
       .btn {
-        min-height: 50px; 
+        min-height: 50px;
         background: #ff2d2d;
         color: #fff;
       }
@@ -132,7 +132,7 @@ $font-family-base: 'Open Sans', sans-serif;
     h3 {
       margin: 0;
     }
-  }   
+  }
 }
 
 .lnd-footer {
@@ -167,14 +167,4 @@ $font-family-base: 'Open Sans', sans-serif;
     background: rgba(255, 255, 255, 0.25); /* social icon hover background color */
     color: #fff; /* social icon hover color */
   }
-
-// .footer {
-//   position: absolute;
-//   bottom: 0;
-//   padding-top: 5px;
-//   width: 100%;
-//   height: 60px;
-//   background-color: #000;
-// }
-
 }
