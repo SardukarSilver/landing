@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,cAAe,CACX,KAAK,CAAE,KAAK,CACZ,UAAU,CAAE,IAAI,CAChB,oBAAQ,CACJ,OAAO,CAAE,EAAE,CACX,MAAM,CAAE,GAAG,CACX,KAAK,CAAE,KAAK,CACZ,gBAAgB,CAAE,OAAO,CACzB,OAAO,CAAE,KAAK",
+"sources": ["../sub-title.scss"],
+"names": [],
+"file": "sub-title.css"
+}

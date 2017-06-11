@@ -1,9 +1,6 @@
-/* Tabs panel */
 .tabbable-panel {
   text-align: center;
 }
-
-/* Default mode */
 .tabbable-line > .nav-tabs {
   border: none;
   margin: 0px;
@@ -34,7 +31,7 @@
   margin-top: 0px;
 }
 .tabbable-line > .nav-tabs > li.active {
-  border-bottom: 4px solid #f3565d;
+  border-bottom: 2px solid #f3565d;
   position: relative;
 }
 .tabbable-line > .nav-tabs > li.active > a {
@@ -48,7 +45,6 @@
   margin-top: -3px;
   background-color: #fff;
   border: 0;
-  border-top: 1px solid #eee;
   padding: 15px 0;
 }
 .portlet .tabbable-line > .tab-content {

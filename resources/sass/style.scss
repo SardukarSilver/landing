@@ -1,12 +1,17 @@
 // Add custom font
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,300);
-$font-family-base: 'Raleway', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+$font-family-base: 'Open Sans', sans-serif;
 
 // Import bootstrap and fontawesome
 @import "bootstrap";
 @import "font-awesome";
 
 @import "tabs-decoration";
+@import "sub-title";
+
+.body {
+  padding: 50px;
+}
 
 .lnd-navbar {
     .navbar-header {
@@ -18,8 +23,10 @@ $font-family-base: 'Raleway', sans-serif;
      float: none;
     }
 }
+
 .lnd-intro {
   background: #f6f2f2;    
+  padding-top: 50px;
 }
 .lnd-services {
   background: #fff;
@@ -28,12 +35,39 @@ $font-family-base: 'Raleway', sans-serif;
   }
 }
 .lnd-products {
-  background: #fff;    
+  background: #fff;
+  .lnd-sub-title {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    &:after {
+      content: "";
+      margin: 0 auto;
+    }
+  }
+  .flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-flex;
+    display: flex;
+  }
+  .wrap { 
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+  }
+  .flex-item {
+   background: #f5f0dd;
+   width: 291px;
+   height: 291px;
+   margin: 10px;
+  }
 }
 
 .lnd-team {
   background: #fff;    
 }
+
 .lnd-subscribe {
   background: #f5f0dd;
   background-image: url(../images/subscribe_bg.jpg);
@@ -73,8 +107,74 @@ $font-family-base: 'Raleway', sans-serif;
 }
 
 .lnd-adress {
-  background: #fff;    
+  background: #fff;
+  .red{
+    color:red;
+  }
+  .form-area {
+    // padding: 10px 40px 60px;
+	  // margin: 10px 0px 60px;
+	}
+  .address-block {
+    color: white;
+    background: black;
+    height: 480px;
+    text-align: center;
+    &:after {
+      content: "";
+      top: 0;
+      bottom: 0;
+      left: 100%;
+      width: 50vw;
+      position: absolute;
+      background: black;
+    }
+    h3 {
+      margin: 0;
+    }
+  }   
 }
+
 .lnd-footer {
-  background: #313030;    
+  background: #313030;
+  bottom: 0;
+  padding-top: 5px;
+  width: 100%;
+  height: 60px;
+  margin-top: 104px;
+  .social-icon {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .social-icon li{
+    display: inline-block;
+    text-align: center;
+  }
+  .social-icon a {
+    display: block;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  .social-icon a {
+    background: rgba(255, 255, 255, 0.85); /* social icon background color */
+    color: #000; /* social icon color */
+  }
+  .social-icon a:hover {
+    background: rgba(255, 255, 255, 0.25); /* social icon hover background color */
+    color: #fff; /* social icon hover color */
+  }
+
+// .footer {
+//   position: absolute;
+//   bottom: 0;
+//   padding-top: 5px;
+//   width: 100%;
+//   height: 60px;
+//   background-color: #000;
+// }
+
 }
