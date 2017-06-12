@@ -1,6 +1,15 @@
+// main color #ff3f40
+// secondary color #f6f2f1
+// third color #312f30
+//
+
 // Add custom font
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 $font-family-base: 'Open Sans', sans-serif;
+$btn-primary-bg: #ff3f40;
+$btn-default-color: #ff3f40;
+$btn-default-border: #ff3f40;
+$btn-font-weight: 700;
 
 // Import bootstrap and fontawesome
 @import "bootstrap";
@@ -13,9 +22,11 @@ $font-family-base: 'Open Sans', sans-serif;
   padding: 0;
   margin: 0;
 }
+
 * {
   box-sizing: border-box;
 }
+
 .lnd-header {
   position: fixed;
   top: 20px;
@@ -23,30 +34,39 @@ $font-family-base: 'Open Sans', sans-serif;
   right: 0;
   z-index: 9999;
   height: 90px;
-}
-.lnd-navbar {
-  background: black;
-  height: 90px;
+  .lnd-navbar {
+    background: black;
+    height: 90px;
     .navbar-header {
-        float: none;
-        text-align: center;
+      float: none;
+      text-align: center;
     }
     li {
      display: inline-block;
      float: none;
+      a {
+      border-radius: 0;
+      font-weight: 700;
+      }
     }
+  }
 }
 
 .lnd-intro {
   background: #f6f2f2;
   padding-top: 90px;
 }
+
 .lnd-services {
   background: #fff;
+  i {
+    color: red;
+  }
   .separator {
     border-bottom: 1px solid #ececec;
   }
 }
+
 .lnd-products {
   background: #fff;
   .lnd-sub-title {
@@ -116,7 +136,6 @@ $font-family-base: 'Open Sans', sans-serif;
         background: #ff2d2d;
         color: #fff;
       }
-
   }
 }
 
