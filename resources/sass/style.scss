@@ -17,32 +17,39 @@
   margin: 0;
 }
 
+// .page {
+//   position: relative;
+//   overflow: hidden;
+// }
+
 * {
   box-sizing: border-box;
 }
-.lnd-navbar {
-  
-}
+
 .lnd-header {
   position: fixed;
   top: 20px;
   left: 0;
   right: 0;
   z-index: 9999;
-  .container {background: black;}
   .lnd-navbar {
-
+    background: black;
+    border: none;
     height: 90px;
-    .navbar-header {
-      float: none;
-      text-align: center;
-    }
+    border-radius: 0;
+    text-align: center;
     li {
-     display: inline-block;
+     display: inline;
      float: none;
       a {
-      border-radius: 0;
-      font-weight: 700;
+        display: inline-block;
+        border-radius: 0;
+        font-weight: 700;
+        padding: 35.5px;
+        color: #e0e0e0
+      }
+      &.active a {
+        background-color: #ff3f40;
       }
     }
   }
@@ -50,13 +57,13 @@
 
 .lnd-intro {
   background: #f6f2f2;
-  padding-top: 90px;
+  padding-top: 150px;
 }
 
 .lnd-services {
   background: #fff;
   i {
-    color: red;
+    color: #ff3f40;
   }
   .separator {
     border-bottom: 1px solid #ececec;
@@ -137,16 +144,21 @@
 
 .lnd-adress {
   background: #fff;
-  .red{
-    color:red;
+  .row-flex {
+    float: none;
+    display: flex;
   }
-  .form-area {
-    // padding: 10px 40px 60px;
-	  // margin: 10px 0px 60px;
+  .red{
+    color:#ff3f40;
+  }
+  .form-custom {
+    input, textarea {
+      background-color: #e5e5e5;
+    }
 	}
   .address-block {
-    color: white;
-    background: black;
+    color: #fff;
+    background: #2d2d2d;
     height: 480px;
     text-align: center;
     &:after {
@@ -156,7 +168,7 @@
       left: 100%;
       width: 50vw;
       position: absolute;
-      background: black;
+      background: #2d2d2d;
     }
     h3 {
       margin: 0;
@@ -175,25 +187,23 @@
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  .social-icon li{
-    display: inline-block;
-    text-align: center;
-  }
-  .social-icon a {
-    display: block;
-    width: 44px;
-    height: 44px;
-    line-height: 44px;
-    border-radius: 50%;
-    margin-right: 5px;
-  }
-  .social-icon a {
-    background: rgba(255, 255, 255, 0.85); /* social icon background color */
-    color: #000; /* social icon color */
-  }
-  .social-icon a:hover {
-    background: rgba(255, 255, 255, 0.25); /* social icon hover background color */
-    color: #fff; /* social icon hover color */
+    li {
+      display: inline-block;
+      text-align: center;
+      a {
+        display: block;
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        border-radius: 50%;
+        margin-right: 5px;
+        background: rgba(255, 255, 255, 0.85); /* social icon background color */
+        color: #000; /* social icon color */
+        &:hover {
+          background: rgba(255, 255, 255, 0.25); /* social icon hover background color */
+          color: #fff; /* social icon hover color */
+        }
+      }
+    }
   }
 }
