@@ -1,41 +1,37 @@
 // main color #ff3f40
 // secondary color #f6f2f1
 // third color #312f30
-//
 
 // Add custom font
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
-$font-family-base: 'Open Sans', sans-serif;
-$btn-primary-bg: #ff3f40;
-$btn-default-color: #ff3f40;
-$btn-default-border: #ff3f40;
-$btn-font-weight: 700;
 
-// Import bootstrap and fontawesome
+// Imports
+@import "variables";
 @import "bootstrap";
 @import "font-awesome";
-
 @import "tabs-decoration";
 @import "sub-title";
 
 .body {
-  padding: 0;
+  padding: 20px 0 0;
   margin: 0;
 }
 
 * {
   box-sizing: border-box;
 }
-
+.lnd-navbar {
+  
+}
 .lnd-header {
   position: fixed;
   top: 20px;
   left: 0;
   right: 0;
   z-index: 9999;
-  height: 90px;
+  .container {background: black;}
   .lnd-navbar {
-    background: black;
+
     height: 90px;
     .navbar-header {
       float: none;
