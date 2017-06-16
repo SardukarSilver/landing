@@ -3,7 +3,7 @@
 // third color #312f30
 
 // Add custom font
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
 
 // Imports
 @import "variables";
@@ -33,7 +33,7 @@
   right: 0;
   z-index: 9999;
   .lnd-navbar {
-    background: black;
+    background: #313030;
     border: none;
     height: 90px;
     border-radius: 0;
@@ -45,8 +45,23 @@
         display: inline-block;
         border-radius: 0;
         font-weight: 700;
-        padding: 35.5px;
-        color: #e0e0e0
+        padding: 34.5px;
+        color: #e0e0e0;
+        &:after{
+          display: block;
+          content: "";
+          height: 2px;
+          width: 0%;
+          background-color: #ff3f40;
+          transition: width .3s ease-in-out;
+        }
+        &:hover {
+          background-color: #313030;
+        }
+        &:hover:after,
+        &:focus:after {
+          width: 100%;
+        }
       }
       &.active a {
         background-color: #ff3f40;
@@ -58,6 +73,26 @@
 .lnd-intro {
   background: #f6f2f2;
   padding-top: 150px;
+  h1 {
+    line-height: 1.2;
+    font-weight: 800;
+    font-size: 60pt;
+    padding-top: 32px;
+  }
+  .video-player{
+    padding: 62px;
+  }
+  p {
+    line-height: 1.75;
+    font-size: 16pt;
+  }
+}
+
+.btn-custom {
+  padding: 11px 62px;
+  letter-spacing: 0.5;
+  font-size: 18px;
+  line-height: 1.88;
 }
 
 .lnd-services {
