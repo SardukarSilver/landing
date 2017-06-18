@@ -153,6 +153,7 @@
     display: -webkit-flex;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
   .wrap {
    -webkit-flex-wrap: wrap;
@@ -162,12 +163,46 @@
    background: #f5f0dd;
    width: 291px;
    height: 291px;
-   margin: 10px;
+   margin-top: 10px;
   }
 }
 
 .lnd-team {
   background: #fff;
+  .main-photo {
+    position: relative;
+    background-color: #f5f0dd;
+    img {
+      width: 321px;
+      height: 458px;
+    }
+  }
+  .member-info {
+    position: relative;
+  }
+  .profile-links, .team-photo {
+    li {
+    list-style: none;
+    display: inline;
+    }
+  }
+  .flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+  }
+  .flex-item {
+   background: #f5f0dd;
+   width: 197px;
+   height: 214px;
+   margin: 10px;
+  }
 }
 
 .lnd-subscribe {
@@ -175,6 +210,12 @@
   background-image: url(../images/subscribe_bg.jpg);
   background-size: cover;
   background-position: center center;
+  .btn-custom {
+    margin: 0;
+  }
+  .input-group {
+    border-radius: 2px;
+  }
 }
 
 .home-newsletter {
