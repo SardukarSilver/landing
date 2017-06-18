@@ -35,23 +35,19 @@
   .lnd-navbar {
     background: #313030;
     border: none;
-    height: 90px;
+    min-height: 20px;
     border-radius: 0;
-    text-align: center;
-    overflow: hidden;;
-    line-height: 30px;
+    overflow: hidden;
+    padding-left: 357px;
     li {
-     display: inline;
+     display: inline-block;
      float: none;
-    //  &.active {
-    //    padding-left: 23px;
-    //  }
       a {
-        display: inline-block;
+        color: #e0e0e0;
         border-radius: 0;
         font-weight: 700;
-        padding: 34.5px;
-        color: #e0e0e0;
+        padding: 40px 24px 28px 24px;
+        margin-right: 4px;
         &:after{
           display: block;
           content: "";
@@ -173,17 +169,21 @@
     position: relative;
     background-color: #f5f0dd;
     img {
-      width: 321px;
-      height: 458px;
+      width: 100%;
+      height: auto;
     }
   }
   .member-info {
     position: relative;
   }
+  // .profile-social-block {
+  //
+  // }
   .profile-links, .team-photo {
     li {
     list-style: none;
-    display: inline;
+    text-decoration: none;
+    display: inline-block;
     }
   }
   .flex-container {
@@ -194,8 +194,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-
   }
   .flex-item {
    background: #f5f0dd;
