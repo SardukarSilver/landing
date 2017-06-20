@@ -80,7 +80,7 @@ header.shrink {
         font-weight: 700;
         padding: 40px 24px 28px 24px;
         margin-right: 4px;
-        &:after{
+        &:after {
           display: block;
           content: "";
           height: 2px;
@@ -137,7 +137,7 @@ header.shrink {
   margin-bottom: 71px;
   .service-info-block {
     position: relative;
-    h2{
+    h2 {
     font-size: 40px;
     line-height: 1.4;
     padding-top: 3px;
@@ -181,6 +181,9 @@ header.shrink {
 .lnd-products {
   background: #fff;
   .lnd-sub-title {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
     h2 {
       font-size: 40px;
       line-height: 1.4;
@@ -193,9 +196,6 @@ header.shrink {
       line-height: 27px;
       font-size: 16px;
       }
-    display: block;
-    text-align: center;
-    margin: 0 auto;
     &:after {
       content: "";
       margin: 0 auto;
@@ -204,13 +204,13 @@ header.shrink {
   .tabbable-line{
     padding-top: 71px;
     margin-bottom: 75px;
+    font-size: 24px;
+    font-weight: 600;
     .nav-tabs {
       a {
         padding: 9px 15px;
         margin-bottom: 25px;
       }
-      font-size: 24px;
-      font-weight: 600;
     }
   }
   .flex-container {
@@ -223,14 +223,14 @@ header.shrink {
     justify-content: space-between;
   }
   .wrap {
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .flex-item {
-   background: #f5f0dd;
-   width: calc(25% - 20px);
-   height: 291px;
-   margin: 10px;
+    background: #f5f0dd;
+    width: calc(25% - 20px);
+    height: 291px;
+    margin: 10px;
   }
 }
 
@@ -276,9 +276,9 @@ header.shrink {
   }
   .profile-links, .team-photo {
     li {
-    list-style: none;
-    text-decoration: none;
-    display: inline-block;
+      list-style: none;
+      text-decoration: none;
+      display: inline-block;
     }
   }
   .flex-container {
@@ -291,10 +291,10 @@ header.shrink {
     justify-content: space-between;
   }
   .flex-item {
-   background: #f5f0dd;
-   width: 197px;
-   height: 214px;
-   margin: 10px;
+    background: #f5f0dd;
+    width: 197px;
+    height: 214px;
+    margin: 10px;
   }
 }
 
@@ -303,40 +303,31 @@ header.shrink {
   background-image: url(../images/subscribe_bg.jpg);
   background-size: cover;
   background-position: center center;
-  .btn-custom {
-    margin: 0;
-  }
-  .input-group {
-    border-radius: 2px;
-  }
-}
-
-.home-newsletter {
-  padding: 80px 0;
-  .single {
-    max-width: 650px;
-    margin: 0 auto;
+  padding: 148px;
+  .custom-form {
     text-align: center;
-    position: relative;
-    z-index: 2;
-    h2 {
-      font-size: 22px;
-      color: white;
-      margin-bottom: 40px;
-    }
     .form-control {
-      height: 50px;
-      background: rgba(255, 255, 255, 0.6);
-      border-color: transparent;
+      padding: 38px 261px;
+      margin: 11px;
+      font-size: 16px;
+      line-height: 1.8;
     }
-    .form-control:focus {
-      box-shadow: none;
-      border-color: #243c4f;
+    .btn-custom {
+      padding: 22px 107px;
+      margin: 11px;
     }
-    .btn {
-      min-height: 50px;
-      background: #ff2d2d;
-      color: #fff;
+  }
+  .subscribe-header {
+    color: #fff;
+    line-height: 1.8;
+    text-align: center;
+    h2 {
+      font-size: 42px;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+    }
+    p {
+      font-size: 16px;
     }
   }
 }
@@ -348,7 +339,7 @@ header.shrink {
     float: none;
     display: flex;
   }
-  .red{
+  .red {
     color:#ff3f40;
   }
   .form-custom {
@@ -382,15 +373,15 @@ header.shrink {
 }
 
 .lnd-footer {
-  .copyrights{
-    color: #b8b8b8;float: left;
-  }
   background: #313030;
   bottom: 0;
   padding-top: 5px;
   width: 100%;
   height: 60px;
   margin-top: 104px;
+  .copyrights {
+    color: #b8b8b8;float: left;
+  }
   .social-icon {
     float: right;
     list-style: none;
