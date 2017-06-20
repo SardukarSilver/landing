@@ -22,16 +22,43 @@
   box-sizing: border-box;
 }
 
+header.shrink {
+  height: 60px;
+  line-height: 52px;
+  flex: 1 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 70px;
+  background: #313030;
+  z-index: 999;
+  .logo {
+    line-height: 57px;
+  }
+  .lnd-navbar > ul > li > a{
+    padding: 8px 24px;
+  }
+}
+
 .lnd-header {
   position: fixed;
   top: 29px;
   left: 0;
   right: 0;
   z-index: 9999;
+  text-align: center;
   .logo {
     font-family: 'Bungee', cursive;
     color: #e0e0e0;
-    display: inline-block;
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    line-height: 77px;
+    text-decoration: none;
+    padding: 7px 0 0 10px;
+    font-size: 60px;
   }
   .lnd-navbar {
     background: #313030;
@@ -42,6 +69,7 @@
     ul {
       display: inline-block;
       text-align: center;
+      margin: 0 183px;
     }
     li {
      display: inline-block;
@@ -78,6 +106,7 @@
 .lnd-intro {
   background: #f6f2f2;
   padding-top: 159px;
+  padding-bottom: 46px;
   h1 {
     line-height: 1.2;
     font-weight: 800;
@@ -92,9 +121,7 @@
     line-height: 1.75;
     font-size: 16px;
     padding-top: 7px;
-  }
-  .btn-custom {
-    margin-top: 43px;
+    margin-bottom: 54px;
   }
 }
 
@@ -106,10 +133,14 @@
 }
 
 .lnd-services {
-  h2{
+  padding-top: 78px;
+  margin-bottom: 71px;
+  .service-info-block {
+    position: relative;
+    h2{
     font-size: 40px;
     line-height: 1.4;
-    padding-top: 127px;
+    padding-top: 3px;
     font-weight: 700;
     letter-spacing: 1.7px;
   }
@@ -117,12 +148,23 @@
     line-height: 1.75;
     font-size: 16px;
     padding-top: 20px;
-  }
-  .row-cutom {
-    margin-top: 20px;
+    padding-bottom: 41px;
   }
   .btn-custom {
-    margin-top: 40px;
+    padding: 10px 60px;
+        border: 2px solid;
+  }
+}
+  .row-cutom {
+    margin-top: 20px;
+    padding-left: 4px;
+    h3 {
+      padding-left: 4px;
+    }
+    p {
+      padding: 4px 6px 37px 4px;
+      line-height: 25px;
+    }
   }
   background: #fff;
   i {
@@ -132,18 +174,43 @@
   }
   .separator {
     border-bottom: 1px solid #ececec;
+    padding-bottom: 66px;
   }
 }
 
 .lnd-products {
   background: #fff;
   .lnd-sub-title {
+    h2 {
+      font-size: 40px;
+      line-height: 1.4;
+      padding-top: 3px;
+      font-weight: 700;
+      letter-spacing: 1.7px;
+    }
+    p {
+      padding: 11px;
+      line-height: 27px;
+      font-size: 16px;
+      }
     display: block;
     text-align: center;
     margin: 0 auto;
     &:after {
       content: "";
       margin: 0 auto;
+    }
+  }
+  .tabbable-line{
+    padding-top: 71px;
+    margin-bottom: 75px;
+    .nav-tabs {
+      a {
+        padding: 9px 15px;
+        margin-bottom: 25px;
+      }
+      font-size: 24px;
+      font-weight: 600;
     }
   }
   .flex-container {
@@ -169,6 +236,20 @@
 
 .lnd-team {
   background: #fff;
+  .lnd-sub-title {
+    h2 {
+      font-size: 40px;
+      line-height: 1.4;
+      padding-top: 3px;
+      font-weight: 700;
+      letter-spacing: 1.7px;
+    }
+    p {
+      padding: 11px;
+      line-height: 27px;
+      font-size: 16px;
+    }
+  }
   .main-photo {
     background-color: #f5f0dd;
     img {
@@ -262,6 +343,7 @@
 
 .lnd-adress {
   background: #fff;
+  overflow: hidden;
   .row-flex {
     float: none;
     display: flex;
@@ -300,6 +382,9 @@
 }
 
 .lnd-footer {
+  .copyrights{
+    color: #b8b8b8;float: left;
+  }
   background: #313030;
   bottom: 0;
   padding-top: 5px;
@@ -307,6 +392,7 @@
   height: 60px;
   margin-top: 104px;
   .social-icon {
+    float: right;
     list-style: none;
     padding: 0;
     margin: 0;
