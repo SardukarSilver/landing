@@ -152,7 +152,11 @@ header.shrink {
   }
   .btn-custom {
     padding: 10px 60px;
-        border: 2px solid;
+    border: 2px solid;
+    &:hover {
+      color: #fff;
+      background: #ff3f40;
+    }
   }
 }
   .row-cutom {
@@ -203,7 +207,7 @@ header.shrink {
   }
   .tabbable-line{
     padding-top: 71px;
-    margin-bottom: 75px;
+    margin-bottom: 5px;
     font-size: 24px;
     font-weight: 600;
     .nav-tabs {
@@ -235,17 +239,18 @@ header.shrink {
 }
 
 .lnd-team {
+  padding-top: 70px;
   background: #fff;
   .lnd-sub-title {
+    margin-bottom: 71px;
     h2 {
       font-size: 40px;
       line-height: 1.4;
-      padding-top: 3px;
       font-weight: 700;
       letter-spacing: 1.7px;
     }
     p {
-      padding: 11px;
+      padding: 11px 11px 45px 11px;
       line-height: 27px;
       font-size: 16px;
     }
@@ -259,14 +264,24 @@ header.shrink {
   }
   .member-info {
     position: relative;
+    h3 {
+    font-size: 30px;
+    font-weight: 600;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.75;
+    }
   }
   .profile-social-block {
     a {
       color: black;
-      padding-right: 10px;
+      padding-right: 32px;
       text-decoration: none;
       font-style: italic;
-      font-size: 16px;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.75;
 
     }
   }
@@ -307,7 +322,8 @@ header.shrink {
   .custom-form {
     text-align: center;
     .form-control {
-      padding: 38px 261px;
+      width: 521px;
+      height: 79px;
       margin: 11px;
       font-size: 16px;
       line-height: 1.8;
@@ -335,28 +351,49 @@ header.shrink {
 .lnd-adress {
   background: #fff;
   overflow: hidden;
+  padding-top: 70px;
+  .lnd-sub-title {
+    margin-bottom: 77px;
+    width: 60%;
+    h2 {
+      font-size: 40px;
+      line-height: 1.4;
+      padding-top: 3px;
+      font-weight: 700;
+      letter-spacing: 1.7px;
+    }
+    p {
+      padding: 25px 11px 42px 11px;
+      line-height: 27px;
+      font-size: 16px;
+    }
+  }
   .row-flex {
     float: none;
     display: flex;
   }
-  .red {
-    color:#ff3f40;
-  }
   .form-custom {
+    .group-name-area > input,
+    .group-email-area > input {
+      width: 349px;
+      height: 69px;
+    }
     input, textarea {
       background-color: #e5e5e5;
     }
     textarea {
       resize: none;
+      height: 214px;
     }
 	}
   .address-col {
     padding-right: 0;
   }
   .address-block {
+    padding: 67px 2px 67px 67px;
     color: #fff;
     background: #2d2d2d;
-    text-align: center;
+    text-align: left;
     &:after {
       content: "";
       top: 0;
@@ -368,6 +405,12 @@ header.shrink {
     }
     h3 {
       margin: 0;
+      font-size: 18px;
+      line-height: 2;
+    }
+    address {
+      font-size: 16px;
+      line-height: 1.75;
     }
   }
 }
@@ -380,7 +423,9 @@ header.shrink {
   height: 60px;
   margin-top: 104px;
   .copyrights {
-    color: #b8b8b8;float: left;
+    color: #b8b8b8;
+    float: left;
+    margin-top: 14px;
   }
   .social-icon {
     float: right;
@@ -397,6 +442,7 @@ header.shrink {
         line-height: 44px;
         border-radius: 50%;
         margin-right: 5px;
+        font-size: 34px;
         background: rgba(255, 255, 255, 0.85); /* social icon background color */
         color: #000; /* social icon color */
         &:hover {
