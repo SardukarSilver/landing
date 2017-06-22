@@ -1,35 +1,35 @@
 {
     "items": [
     {
-        "imageSorce": "images/tab-cat-01.jpg",
+        "imageSource": "images/tab-cat-01.jpg",
         "type": "printTemplate"
     },
     {
-        "imageSorce": "images/tab-cat-02.jpg",
+        "imageSource": "images/tab-cat-02.jpg",
         "type": "printTemplate"
     },
     {
-        "imageSorce": "images/tab-cat-03.jpg",
+        "imageSource": "images/tab-cat-03.jpg",
         "type": "webTemplate"
     },
     {
-        "imageSorce": "images/tab-cat-04.jpg",
+        "imageSource": "images/tab-cat-04.jpg",
         "type": "webTemplate"
     },
     {
-        "imageSorce": "images/tab-cat-05.jpg",
+        "imageSource": "images/tab-cat-05.jpg",
         "type": "UI"
     },
     {
-        "imageSorce": "images/tab-cat-06.jpg",
+        "imageSource": "images/tab-cat-06.jpg",
         "type": "UI"
     },
     {
-        "imageSorce": "images/tab-cat-07.jpg",
+        "imageSource": "images/tab-cat-07.jpg",
         "type": "mockUp"
     },
     {
-        "imageSorce": "images/tab-cat-08.jpg",
+        "imageSource": "images/tab-cat-08.jpg",
         "type": "mockUp"
     }
     ]
