@@ -1,20 +1,45 @@
-var $teamContainer = $("#anc-team");
+$(document).ready(function(){
 
-var fillSelected = function (currentMember) {
-  $teamContainer.find(".main-photo img").attr("src", currentMember.photo);
-  $teamContainer.find(".member-info h3").text(currentMember.name);
-  $teamContainer.find(".member-info p").text(currentMember.discription);
-  $teamContainer.find(".profile-links a").attr("href", currentMember.links[0].link);
-};
+  var $teamContainer = $("#anc-team");
+  var oldData =  null;
 
-$.getJSON('js-resourses/team-content.json', function(data) {
-    fillSelected(data.teamMembers[0]);
+  var fillSelected = function (currentMember) {
+    console.log(currentMember);
+    $teamContainer.find(".main-photo img").attr("src", currentMember.photo);
+    $teamContainer.find(".member-info h3").text(currentMember.name);
+    $teamContainer.find(".member-info p").text(currentMember.discription);
+    $teamContainer.find(".profile-links a").attr("href", currentMember.links[0].link);
+  };
+
+  var fillData = function(data, startId) {
+    console.log(startId);
+    fillSelected(data.teamMembers[startId]);
+    data.teamMembers.splice(startId, 1);
+
     $("#anc-team .team-photo img").each(function(i) {
       var $el = $(this);
-      var currentMember = data.teamMembers[i+1];
+      var currentMember = data.teamMembers[i];
       $el.attr("src", currentMember.photo);
       $el.click(function() {
-        fillSelected(currentMember);
+        console.log(data.teamMembers[i]);
+         fillData(jQuery.extend(true, {}, oldData), data.teamMembers[i].id);
       });
     });
+  };
+
+  $.getJSON('js-resourses/team-content.json', function(data) {
+      oldData = jQuery.extend(true, {}, data);
+      fillData(data, 0);
+
+
+      /*fillSelected(data.teamMembers[0]);
+      $("#anc-team .team-photo img").each(function(i) {
+        var $el = $(this);
+        var currentMember = data.teamMembers[i+1];
+        $el.attr("src", currentMember.photo);
+        $el.click(function() {
+          fillSelected(currentMember);
+        });
+      });*/
+  });
 });

@@ -1,3 +1,4 @@
+$(document).ready(function(){
 $.getJSON('js-resourses/tab-content.json', function(data) {
   var uiItems = {
     all: {
@@ -56,4 +57,5 @@ $.getJSON('js-resourses/tab-content.json', function(data) {
   });
 
   updateUiInnerHtml(uiItems);
+});
 });
