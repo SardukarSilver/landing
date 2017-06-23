@@ -241,6 +241,7 @@ header.shrink {
 .lnd-team {
   padding-top: 70px;
   background: #fff;
+  margin-bottom: 110px;
   .lnd-sub-title {
     margin-bottom: 71px;
     h2 {
@@ -305,11 +306,13 @@ header.shrink {
     flex-direction: row;
     justify-content: space-between;
   }
-  .flex-item {
-    background: #f5f0dd;
-    width: 197px;
-    height: 214px;
-    margin: 10px;
+  .flex-item > img {
+      background: #f5f0dd;
+      width: 197px;
+      height: 214px;
+      margin: 10px;
+
+
   }
 }
 

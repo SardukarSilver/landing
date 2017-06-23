@@ -38,20 +38,20 @@ $.getJSON('js-resourses/tab-content.json', function(data) {
   getUiElements(uiItems);
 
   $.each(data.items, function(index, value) {
-    uiItems.all.innerHtml += '<li><img src=' + value.imageSource + '></li>';
+    uiItems.all.innerHtml += '<li class="flex-item"><img src=' + value.imageSource + '></li>';
 
     switch (value.type) {
       case 'printTemplate':
-        uiItems.printTemplate.innerHtml += '<li><img src=' + value.imageSource + '></li>';
+        uiItems.printTemplate.innerHtml += '<li class="flex-item"><img src=' + value.imageSource + '></li>';
         break;
       case 'webTemplate':
-        uiItems.webTemplate.innerHtml += '<li><img src=' + value.imageSource + '></li>';
+        uiItems.webTemplate.innerHtml += '<li class="flex-item"><img src=' + value.imageSource + '></li>';
         break;
       case 'UI':
-        uiItems.UI.innerHtml += '<li><img src=' + value.imageSource + '></li>';
+        uiItems.UI.innerHtml += '<li class="flex-item"><img src=' + value.imageSource + '></li>';
         break;
       case 'mockUp':
-        uiItems.mockUp.innerHtml += '<li><img src=' + value.imageSource + '></li>';
+        uiItems.mockUp.innerHtml += '<li class="flex-item"><img src=' + value.imageSource + '></li>';
         break;
     }
   });

@@ -4,7 +4,6 @@ $(document).ready(function(){
   var oldData =  null;
 
   var fillSelected = function (currentMember) {
-    console.log(currentMember);
     $teamContainer.find(".main-photo img").attr("src", currentMember.photo);
     $teamContainer.find(".member-info h3").text(currentMember.name);
     $teamContainer.find(".member-info p").text(currentMember.discription);
@@ -12,7 +11,6 @@ $(document).ready(function(){
   };
 
   var fillData = function(data, startId) {
-    console.log(startId);
     fillSelected(data.teamMembers[startId]);
     data.teamMembers.splice(startId, 1);
 
@@ -21,7 +19,6 @@ $(document).ready(function(){
       var currentMember = data.teamMembers[i];
       $el.attr("src", currentMember.photo);
       $el.click(function() {
-        console.log(data.teamMembers[i]);
          fillData(jQuery.extend(true, {}, oldData), data.teamMembers[i].id);
       });
     });
@@ -31,7 +28,7 @@ $(document).ready(function(){
       oldData = jQuery.extend(true, {}, data);
       fillData(data, 0);
 
-
+      
       /*fillSelected(data.teamMembers[0]);
       $("#anc-team .team-photo img").each(function(i) {
         var $el = $(this);
