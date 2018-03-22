@@ -27,16 +27,5 @@ $(document).ready(function(){
   $.getJSON('js-resourses/team-content.json', function(data) {
       oldData = jQuery.extend(true, {}, data);
       fillData(data, 0);
-
-      
-      /*fillSelected(data.teamMembers[0]);
-      $("#anc-team .team-photo img").each(function(i) {
-        var $el = $(this);
-        var currentMember = data.teamMembers[i+1];
-        $el.attr("src", currentMember.photo);
-        $el.click(function() {
-          fillSelected(currentMember);
-        });
-      });*/
   });
 });
